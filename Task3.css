@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+	font-family: "Roboto";
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height:100vh;
+	background-color: hsl(234, 29%, 20%);
+}
+
+.container{
+	display: flex;
+	width: 800px;
+	background-color: hsl(0, 0%, 100%);
+	padding: 40px;
+	border-radius: 20px;
+}
+
+.statement{
+	width: 60%;
+}
+
+.img{
+	width: 40%;
+}
+
+.img img{
+	width: 100%;
+}
+
+p{
+	margin-bottom: 20px;
+}
+
+ul{
+	margin-left: 40px;
+	list-style-image: url(icon-list.svg);
+}
+
+li{
+	margin-bottom: 10px;
+}	
+
+form{
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+}
+
+label{
+	margin-bottom: 10px;
+}
+
+input{
+	padding: 10px 20px;
+	font-family: inherit;
+	border-radius: 5px;
+	outline: none;
+	border: 1px solid hsl(231, 7%, 60%);
+}
+
+button{
+	font-family: inherit;
+	margin-top: 20px;
+	padding: 15px 20px;
+	border: none;
+	outline: none;
+	color: hsl(0, 0%, 100%);
+	border-radius: 5px;
+	background-color: hsl(235, 18%, 26%);
+	cursor: pointer;
+}
+
+button:hover{
+	background: linear-gradient(127deg,rgba(255,63,124,1)40%, rgba(255, 154,34,1)70%);
+	transition: all 1s;
+}
+
+h1{
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+.hide{
+	display: none;
+}
+
+.success{
+	background-color: hsl(0, 0%, 100%);
+	width: 400px;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.success h1{
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+.icon-success{
+	width: 50px;
+	margin: 20px 0;
+}
+
+.success button{
+	width: 100%;
+}
+
+@media(max-width: 768px){
+	body{
+		padding: 0;
+		margin: 0;
+	}
+	.container{
+		flex-direction: column-reverse;
+		width: 95%;
+		padding: 0;
+	}
+	.container h1{
+		font-size: 30px;
+	}
+	.img{
+		width: 100%;
+	    max-height: 40%;
+	}
+	.img img{
+		background-image: url('illustration-sign-up-mobile.svg');
+	}
+	.statement{
+		width: 100%;
+		padding: 20px;
+	}
+	form{
+		width: 90%;
+	}
+	.success{
+		min-height: 100vh;
+	}
+}
